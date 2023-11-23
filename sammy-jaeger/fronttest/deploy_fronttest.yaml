@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: fronttest
+  labels:
+    name: fronttest
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: fronttest
+  template:
+    metadata:
+      labels:
+        app: fronttest
+    spec:
+      containers:
+        - name: fronttest
+          image: leoadams/fronttest:v1
+          imagePullPolicy: Always
+          env:
+            - name: COUNTER_ENDPOINT
+              value: "http://do-visit-counter-backend.default.svc.cluster.local:5000"
+          ports:
+            - name: fronttest-port
+              containerPort: 8050
+              protocol: TCP

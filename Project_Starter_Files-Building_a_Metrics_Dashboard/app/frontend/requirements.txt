@@ -1,0 +1,14 @@
+Flask
+requests
+pylint
+#gunicorn==20.0.4
+jaeger-client
+Flask-Opentracing
+prometheus-client
+opentelemetry-api
+opentelemetry-exporter-jaeger
+opentelemetry-instrumentation-flask
+opentelemetry-instrumentation-requests
+opentelemetry-instrumentation
+opentelemetry-sdk
+prometheus-flask-exporter

@@ -1,3 +1,17 @@
+# Flask
+# requests
+# pylint
+# #gunicorn==20.0.4
+# pymongo
+# Flask-PyMongo
+# prometheus-client
+# opentelemetry-api
+# opentelemetry-exporter-jaeger
+# opentelemetry-instrumentation-flask
+# opentelemetry-instrumentation-requests
+# opentelemetry-instrumentation
+# opentelemetry-sdk
+# promethesk-exporter
 Flask==1.1.2
 requests==2.23.0
 pylint==2.4.0
